@@ -1,228 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --bg-color: #0f172a;       /* Slate 900 */
-            --card-bg: #1e293b;        /* Slate 800 */
-            --text-main: #f8fafc;      /* Slate 50 */
-            --text-muted: #94a3b8;     /* Slate 400 */
-            --accent: #6366f1;         /* Indigo 500 */
-            --accent-hover: #4f46e5;   /* Indigo 600 */
-            --max-width: 1000px;
-        }
+---
+layout: layout
+redirect_from: "/beta"
+title: "Vaibhav Sharma"
+---
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
 
-        html {
-            scroll-behavior: smooth;
-        }
+<div class="row">
+	<div class="six columns">
+		<p> I am a founding member at <a href="https://periodic.com/">Periodic Labs</a>. I am also an Adjunct Professor at McGill University. Briefly, I worked on reinforcement learning and reasoning at <a href="https://x.com/agarwl_/status/1960034048698388795">Meta</a>. Before that, I was a staff research scientist at <a href="https://deepmind.google/"> Google DeepMind</a>.  I finished my PhD at Mila under the guidance of Aaron Courville and Marc Bellemare.   
+		Previously, I spent a year at Geoffrey Hinton's amazing team in Google Brain, Toronto. Earlier, I graduated in Computer Science and Engineering from IIT Bombay. </p>
+<!--  		I also had a brief stint at Latent Logic (acquired by <a href="https://waymo.com/">Waymo</a>), a self-driving car startup in Oxford -->
+		<p> My current research revolves around RL and LLMs, and my prior work has received 
+		    an <a href="https://agarwl.github.io/rliable/">outstanding paper award</a> at NeurIPS. I also came up with <a href="https://arxiv.org/abs/2306.13649">On-policy Distillation for LLMs</a>, popularized offline RL, and was a core contributor for Gemma and Gemini models.
+		</p>
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            padding-top: 80px; /* Offset for sticky nav */
-        }
+<!-- 		<center class="prof-summary"> <h1 class="page-heading"><a class="post-link " href="/about">Professional Summary</a> </h1></center> -->
+	</div>
 
-        a {
-            color: inherit;
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
+    <div class="six columns">
+        <img src="images/vaibhav_profile.jpg" id="profile_picture"> </img>
+	</div>
+</div>
 
-        /* --- Navigation --- */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(15, 23, 42, 0.8);
-            backdrop-filter: blur(12px);
-            z-index: 1000;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
+<div class="divider"></div>
 
-        .nav-container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.25rem 2rem;
-        }
+<!-- <h3>Current PhD Students </h3>
+<ul>
+	<li> Morgane Moss (Co-supervised with Aaron Courville) </li>
+</ul> -->
 
-        .logo {
-            font-weight: 700;
-            font-size: 1.25rem;
-            letter-spacing: -0.05em;
-        }
+<h3> Selected Talks & Tutorials </h3>
+<ul> 
+	<li> <a href="https://youtu.be/GH4JCdAAUYg?si=x402PwhBpJ2SAJo0"> [Recording]</a> Talk at ICLR 2026 on <a href="https://agarwl.github.io/images/research/iclr_spot_talk_v2.pdf"> The Hitchhiker’s Guide to Frontier Reinforcement Learning </a>, which touches on our work at Periodic. </li>
+	<li> <a href="https://www.youtube.com/watch?v=RBZx-BKKdG8"> [Recording] </a> McGill Lecture on <a href="https://drive.google.com/file/d/1kM25WYGKEkzE55DhN35Mqw_eO3ObEoi9/view">The Art of Scaling Reinforcement Learning Compute</a>   </li>
+	<li> <a href="https://www.youtube.com/watch?v=nXQE1DsPm2c">[Recording]</a> Talk at CVPR 2025 on <a href="https://drive.google.com/file/d/1xd9gPMakWhKl5JlcQqrAIN7gVoxNsS5M/view"> The Bitter Lesson for RL: Verification as the Key to Reasoning LLMs </a>. </li>
+    <li> <a href="https://www.youtube.com/watch?v=O1AR4iL30mg"> [Podcast @ Youtube] </a> Tutorial on <a href="https://drive.google.com/file/d/1xMohjQcTmQuUd_OiZ3hB1r47WB1WM3Am/view"> Post-Training Distillation of LLMs </a> at Deepmind </li> 
+    <li> Guest lecture at McGill about <a href="https://drive.google.com/file/d/1komQ7s9kPPvDx_8AxTh9A6tlfJA0j6dR/view"> RL, Reasoning, and Verifiers. </a> </li>
+</ul>
 
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
+<h3> Past Interns & Student Researchers </h3>
+<ul>
+	<li> Max Schwarzer (<a href="https://arxiv.org/abs/2305.19452">BBF</a>, Now ChatGPT lead @ OpenAI) </li>
+	<li> Devvrit Khatri (<a href="https://www.notion.so/The-Art-of-Scaling-Reinforcement-Learning-Compute-for-LLMs-28c2af1d07f3801ebc70e6b2bc9102fd">Scaling RL Compute</a>, Mirendil) </li>
+	<li> Yongchao Zhou (<a href="https://arxiv.org/abs/2310.08461">DistillSpec</a>, Now @ x.AI) </li>
+	<li> Arian Hosseini (<a href="https://arxiv.org/abs/2402.06457">V-STaR</a>, Now @ GDM) </li>
+	<li> Jesse Farebrother (<a href="https://arxiv.org/abs/2403.03950">Stop Regressing</a>, PhD @ McGill) </li>
+	<li> Lunjun Zhang (<a href="https://arxiv.org/abs/2408.15240">Generative RMs</a>, PhD @ UofT) </li>
+	<li> Charline Le Lan (<a href="https://arxiv.org/abs/2203.00543">RL Generalization</a>, Now Gemini Flash @ GDM) </li>
+	<li> Michael Noukhovitch (<a href="https://arxiv.org/abs/2410.18252"> Asynchronous RL for LLMs</a>, PhD @ Mila) </li>
+	<li> Wenda Xu (<a href="https://arxiv.org/abs/2410.11325">Speculative KD </a>, Now @ Google) </li>
+	<li> Hritik Bansal (<a href="https://arxiv.org/abs/2408.16737">Compute-Optimal STaR / KD / W2S </a>, PhD @ UCLA) </li>
+	<li> Josh P Zitovsky (<a href="https://arxiv.org/abs/2302.00141">Offline Model Selection</a>, Now @ Amazon)</li>
+	<li> Amrith Setlur (<a href="https://arxiv.org/abs/2410.08146">Advantage for PRMs </a>, PhD @ CMU)</li>
+	<li> Ghada Sokar (<a href="https://arxiv.org/abs/2302.12902">Dormant Neurons</a>, Now @ GDM) </li>	
+	<li> Siddhant Agarwal (Undergrad Researcher, Now PhD @ UT Austin )</li>
+	<li> Kusha Sareen (<a href="https://arxiv.org/abs/2505.04842">RL+Verifiers</a>, Now PhD student at McGill) </li>
+</ul>
 
-        .nav-links a {
-            font-size: 0.95rem;
-            font-weight: 500;
-            color: var(--text-muted);
-        }
 
-        .nav-links a:hover {
-            color: var(--text-main);
-        }
 
-        /* --- Layout Container --- */
-        main {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        section {
-            padding: 5rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        section:last-of-type {
-            border-bottom: none;
-        }
-
-        .section-title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-bottom: 2.5rem;
-            position: relative;
-            display: inline-block;
-        }
-
-        /* --- Hero Section --- */
-        #hero {
-            padding-top: 3rem;
-            min-height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-        }
-
-        .hero-tag {
-            color: var(--accent);
-            font-weight: 600;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 1rem;
-        }
-
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero-subtitle {
-            font-size: 1.25rem;
-            color: var(--text-muted);
-            max-width: 600px;
-            margin-bottom: 2.5rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--accent);
-            color: white;
-            padding: 0.8rem 1.75rem;
-            border-radius: 6px;
-            font-weight: 500;
-            transition: background-color 0.2s ease, transform 0.2s ease;
-        }
-
-        .btn:hover {
-            background-color: var(--accent-hover);
-            transform: translateY(-2px);
-        }
-
-        /* --- About Section --- */
-        .about-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 3rem;
-        }
-
-        .about-text p {
-            color: var(--text-muted);
-            margin-bottom: 1.5rem;
-        }
-
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-top: 1.5rem;
-        }
-
-        .skill-tag {
-            background-color: var(--card-bg);
-            color: var(--text-main);
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        /* --- Projects Section --- */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .project-card {
-            background-color: var(--card-bg);
-            border-radius: 8px;
-            padding: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .project-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-            border-color: rgba(99, 102, 241, 0.3);
-        }
-
-        .project-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-        }
-
-        .project-desc {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .project-links {
-            display
+<h3 id='news'> News </h3>
+<ul>
+  <li> <a href="https://thinkingmachines.ai/blog/on-policy-distillation/">Thinking Machines blog post</a> based on my 2023 paper about <a href="https://arxiv.org/abs/2306.13649">On-policy Distillation of LLMs</a>.
+  <li> <a href="https://www.youtube.com/watch?v=6PUuitJNoJE"> Delta Podcast </a> on research career and lessons learned so far. </li>
+  <li> 7 papers accepted at ICLR 2025, including <a href="https://arxiv.org/abs/2408.15240"> Generative Verifiers </a>, <a href="https://arxiv.org/abs/2409.12917"> SCoRE </a>,  <a href="https://arxiv.org/abs/2410.11325"> Speculative KD</a>, <a href="https://arxiv.org/abs/2410.18252"> Async RLHF</a>, and <a href="https://arxiv.org/abs/2412.15287"> Inference-aware RL for LLMs </a>. </li> 
+  <li> Panelist on the <a href="https://cmu-l3.github.io/neurips2024-inference-tutorial/"> Inference Time LLM Algorithms </a> Tutorial at NeurIPS 2024. </li>
+  <!-- <li> <a href="https://arxiv.org/abs/2404.11018"> Many-Shot ICL </a> and  <a href="https://arxiv.org/abs/2407.04622"> Scalable Oversight </a> accepted at NeurIPS 2024 </li>	 -->
+<!--   <li> 4 papers, including an oral, accepted at ICML'23. </li>
+  <li> 3 papers, including an oral, accepted at ICLR'23 (related to scaling TD methods) and one paper accepted at AISTATS'23. </li>
+  <li> Co-organizing an in-person workshop on <a href="https://reincarnating-rl.github.io"> Reincarnating RL </a> at ICLR 2023 in Kigali, Rwanda. </li>
+  <li> Talk on Reincarnating RL at the <a href="https://upml2022.github.io/"> UpML workshop </a> at ICML 2022.</li>
+  <li> Co-organizing an in-person workshop on "Offline RL as a Launchpad" at NeurIPS 2022.</li>
+  <li> One paper each accepted at AAAI'22, AISTATS'22, and ICLR'22. </li>
+  <li> Co-organizing a workshop on "<a href="https://ml-eval.github.io"> Setting ML Evaluation Standards to Accelerate Progress </a> at ICLR 2022. </li>   	
+  <li> <a href="https://blog.neurips.cc/2021/11/30/announcing-the-neurips-2021-award-recipients/?s=09">Outstanding paper award</a> at NeurIPS 2021 </li>
+  <li> Two papers accepted at NeurIPS 2021: one <a href="https://agarwl.github.io/rliable/"> oral presentation </a> and one spotlight. </li>
+  <li> Co-organizing the <a href="https://offline-rl-neurips.github.io/2021"> 2nd Offline RL workshop</a> at NeurIPS 2021.</li>
+  <li> Two papers (including one spotlight presentation) accepted at ICLR 2021. </li> 
+  <li> At NeurIPS 2020, I'll be giving a talk "Contrastive Behavioral Similarity Embeddings for Generalization in RL" at the <a href="https://nips.cc/Conferences/2020/Schedule?showEvent=16109">Biological and Artifical RL Workshop</a>. </li> 
+  <li> Gave a talk about Offline RL at<a href="http://mlcollective.org/dlct"> ML Collective Reading Group </a>. </li>
+  <li> Organizing a workshop on <a href="https://offline-rl-neurips.github.io"> Offline RL</a> at NeurIPS 2020.</li> 
+  <li> Two papers accepted at ICML 2020. </li>
+  <li> Gave a talk at Stanford about <a href="https://offline-rl.github.io">offline reinforcement learning</a>
+  <li> At NeurIPS 2019, I <a href='https://slideslive.com/38922027/deep-reinforcement-learning-3?t=1728'>gave a talk </a> about our work on <a href='https://offline-rl.github.io'>offline RL</a> in the Deep RL Workshop.</li>
+  <li> At ICML 2019, I <a href="https://youtu.be/_IXj6kXPdq8"> gave a talk </a> about our work on <a href="https://arxiv.org/abs/1902.07198"> Learning to Generalize from Sparse and Underspecified Rewards. </a> -->
+</ul>
